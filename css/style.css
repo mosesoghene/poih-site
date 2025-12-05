@@ -13921,7 +13921,7 @@ ol.commentlist li .star-rating {
 	}
 }
 
-/* Support and Buy Button */
+/* Support Button */
 .theme-btn{
 	background-color: #ffffff;
     border-radius: 40px;
@@ -13934,27 +13934,27 @@ ol.commentlist li .star-rating {
     position: fixed;
     text-align: center;
 	z-index: 9999;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
 }
 .theme-btn i{
 	font-size: 22px;
     line-height: 50px;
 }
 .theme-btn.bt-support-now{
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1ebbf0+8,39dfaa+100 */
-	background: #1ebbf0; /* Old browsers */
-	background: -moz-linear-gradient(45deg, #1ebbf0 8%, #39dfaa 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #1ebbf0 8%,#39dfaa 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(45deg, #1ebbf0 8%,#39dfaa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ebbf0', endColorstr='#39dfaa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/* WhatsApp green gradient */
+	background: #25D366;
+	background: -moz-linear-gradient(45deg, #25D366 0%, #128C7E 100%);
+	background: -webkit-linear-gradient(45deg, #25D366 0%, #128C7E 100%);
+	background: linear-gradient(45deg, #25D366 0%, #128C7E 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25D366', endColorstr='#128C7E',GradientType=1 );
 	bottom: 70px;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
 }
-.theme-btn.bt-buy-now{
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1fdf61+0,88BA46+100 */
-	background: #1fdf61; /* Old browsers */
-	background: -moz-linear-gradient(top,  #A3D179 0%, #88BA46 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #A3D179 0%,#88BA46 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #A3D179 0%,#88BA46 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fdf61', endColorstr='#88BA46',GradientType=0 ); /* IE6-9 */
+.theme-btn.bt-support-now:hover{
+	box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+	transform: translateY(-2px);
 }
 .theme-btn:hover{
 	color:#fff;
