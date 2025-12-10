@@ -273,9 +273,9 @@ class PHPMailer
      * Either a single hostname or multiple semicolon-delimited hostnames.
      * You can also specify a different port
      * for each host by using this format: [hostname:port]
-     * (e.g. "smtp1.example.com:25;smtp2.example.com").
+     * (e.g. "smtp1.petroleumoilinternationalholdings.com:25;smtp2.petroleumoilinternationalholdings.com").
      * You can also specify encryption type, for example:
-     * (e.g. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").
+     * (e.g. "tls://smtp1.petroleumoilinternationalholdings.com:587;ssl://smtp2.petroleumoilinternationalholdings.com:465").
      * Hosts will be tried in order.
      *
      * @var string
@@ -500,7 +500,7 @@ class PHPMailer
     /**
      * DKIM signing domain name.
      *
-     * @example 'example.com'
+     * @example 'petroleumoilinternationalholdings.com'
      *
      * @var string
      */
@@ -1335,7 +1335,7 @@ class PHPMailer
      * Alternatively you may pass in a callable to inject your own validator, for example:
      *
      * ```php
-     * PHPMailer::validateAddress('user@example.com', function($address) {
+     * PHPMailer::validateAddress('user@petroleumoilinternationalholdings.com', function($address) {
      *     return (strpos($address, '@') !== false);
      * });
      * ```
@@ -2352,7 +2352,7 @@ class PHPMailer
      * @param array  $addr An array of recipients,
      *                     where each recipient is a 2-element indexed array with element 0 containing an address
      *                     and element 1 containing a name, like:
-     *                     [['joe@example.com', 'Joe User'], ['zoe@example.com', 'Zoe User']]
+     *                     [['joe@petroleumoilinternationalholdings.com', 'Joe User'], ['zoe@petroleumoilinternationalholdings.com', 'Zoe User']]
      *
      * @return string
      */
@@ -2370,7 +2370,7 @@ class PHPMailer
      * Format an address for use in a message header.
      *
      * @param array $addr A 2-element indexed array, element 0 containing an address, element 1 containing a name like
-     *                    ['joe@example.com', 'Joe User']
+     *                    ['joe@petroleumoilinternationalholdings.com', 'Joe User']
      *
      * @return string
      */

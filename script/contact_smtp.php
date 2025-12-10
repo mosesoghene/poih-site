@@ -25,7 +25,7 @@ require('recaptcha-master/src/autoload.php');
 /* ReCaptch Secret */
 $recaptchaSecret = '<!-- Put Your reCaptcha Secret Key -->';
 
-$dzEmailTo 		= "info@example.com";   /* Receiver Email Address */
+$dzEmailTo 		= "info@petroleumoilinternationalholdings.com";   /* Receiver Email Address */
 $dzEmailFrom    = "Industry Contact";
 
 #### Load PHP Mailer Library ####
@@ -52,7 +52,7 @@ function smtp_mail($dzEmailTo, $dzEmailFrom, $dzEmail, $dzMailSubject, $dzMailMe
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = '<!-- Put Your Server Host  -->';                //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'username@example.com';                   //SMTP username
+    $mail->Username   = 'username@petroleumoilinternationalholdings.com';                   //SMTP username
     $mail->Password   = '<!-- Password -->';                        //SMTP password
     $mail->SMTPSecure = 'SSL';            						//Enable implicit TLS encryption
     $mail->Port       = 25;                                     //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`

@@ -25,7 +25,7 @@ require('recaptcha-master/src/autoload.php');
 /* ReCaptch Secret */
 $recaptchaSecret = '<!-- Put Your reCaptcha Secret Key -->';
 
-$dzEmailTo 		= "info@example.com";   /* Receiver Email Address */
+$dzEmailTo 		= "info@petroleumoilinternationalholdings.com";   /* Receiver Email Address */
 $dzEmailFrom    = "Industry Contact";
 
 
