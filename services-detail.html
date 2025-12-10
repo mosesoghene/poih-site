@@ -331,8 +331,69 @@
 <script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
+<!-- Fraud Warning Popup -->
+<div class="fraud-warning-overlay" id="fraudWarningOverlay">
+	<div class="fraud-warning-popup">
+		<div class="fraud-warning-header">
+			<h3>
+				<span class="warning-icon">⚠️</span>
+				Fraud Warning
+			</h3>
+			<button class="fraud-warning-close" onclick="closeFraudWarning()">×</button>
+		</div>
+		<div class="fraud-warning-content">
+			<p>At Petroleum Oil International Holdings, we take your security and trust seriously. We want to alert you to the possibility of fraudulent activity associated with our name. Please be aware of individuals or organizations claiming to represent us in unauthorized activities, including job offers, financial solicitations, or requests for personal information.</p>
+			
+			<h4>Important Points</h4>
+			<ul>
+				<li>
+					<strong>Official Communication:</strong> All official communication from Petroleum Oil International Holdings will come from our official email domains and will not use free email services.
+				</li>
+				<li>
+					<strong>Verification:</strong> If you receive any communication that appears suspicious, please verify its authenticity through our official contact information, which you can find on our website.
+				</li>
+				<li>
+					<strong>Protect Your Personal Information:</strong> Do not share personal information, financial details, or identification documents with unauthorized individuals or entities claiming to represent Petroleum Oil International Holdings.
+				</li>
+				<li>
+					<strong>Report Suspected Fraud:</strong> If you suspect any fraudulent activity related to Petroleum Oil International Holdings, please report it to us immediately through our official contact channels.
+				</li>
+			</ul>
+			
+			<p><strong>Your security is of utmost importance to us.</strong> Please stay vigilant and reach out to us if you have any concerns. Thank you for your trust in Petroleum Oil International Holdings.</p>
+		</div>
+	</div>
+</div>
+<!-- Fraud Warning Popup END -->
 
-<script src="plugins/swiper/swiper-bundle.min.js"></script><!-- SWIPER -->
- 
+<script>
+	// Fraud Warning Popup Functions
+	function closeFraudWarning() {
+		document.getElementById('fraudWarningOverlay').classList.remove('active');
+		localStorage.setItem('fraudWarningShown', 'true');
+	}
+	
+	// Show fraud warning after 10 seconds if not shown before
+	window.addEventListener('load', function() {
+		if (!localStorage.getItem('fraudWarningShown')) {
+			setTimeout(function() {
+				document.getElementById('fraudWarningOverlay').classList.add('active');
+			}, 10000); // 10 seconds
+		}
+	});
+	
+	// Close on overlay click
+	document.addEventListener('DOMContentLoaded', function() {
+		var overlay = document.getElementById('fraudWarningOverlay');
+		if (overlay) {
+			overlay.addEventListener('click', function(e) {
+				if (e.target === overlay) {
+					closeFraudWarning();
+				}
+			});
+		}
+	});
+</script>
+
 </body>
 </html>
